@@ -156,14 +156,11 @@ export default function Products() {
       title: "Product Title",
       dataIndex: "product_title",
       key: "title",
-      width: 350,
-      ellipsis: true,
     },
     {
       title: "Price",
       dataIndex: "product_price",
       key: "price",
-      width: 200,
       render: (price: number) =>
         new Intl.NumberFormat("en-US", {
           style: "currency",
@@ -174,7 +171,6 @@ export default function Products() {
       title: "Category",
       dataIndex: "product_category",
       key: "category",
-      width: 200,
     },
     {
       title: "Description",
@@ -185,18 +181,17 @@ export default function Products() {
     {
       title: "Actions",
       key: "actions",
-      width: 150,
+      align: "center",
       render: (_, record) => (
         <Space size="middle">
-          <Tooltip title="Edit">
-            <Button
-              color="orange"
-              variant="filled"
-              shape="circle"
-              icon={<EditOutlined />}
-              onClick={() => showEditModal(record)}
-            />
-          </Tooltip>
+          <Button
+            color="orange"
+            variant="filled"
+            icon={<EditOutlined />}
+            onClick={() => showEditModal(record)}
+          >
+            Edit
+          </Button>
           <Popconfirm
             title="Delete Product"
             description="Are you sure to delete this product?"
@@ -204,14 +199,9 @@ export default function Products() {
             okText="Yes, delete it"
             cancelText="Cancel"
           >
-            <Tooltip title="Delete">
-              <Button
-                color="danger"
-                variant="filled"
-                shape="circle"
-                icon={<DeleteOutlined />}
-              />
-            </Tooltip>
+            <Button color="danger" variant="filled" icon={<DeleteOutlined />}>
+              Delete
+            </Button>
           </Popconfirm>
         </Space>
       ),
