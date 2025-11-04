@@ -1,36 +1,67 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# **Technical Test FE SGT**
 
-## Getting Started
+Repositori ini berisi pengerjaan technical test untuk posisi Junior Front End Engineer di PT. SUMMIT GLOBAL TEKNOLOGI. Proyek ini dibangun menggunakan Next.js.
 
-First, run the development server:
+## Instruksi Menjalankan Proyek
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+Berikut adalah panduan lengkap untuk menjalankan proyek ini di lingkungan lokal Anda.
+
+### a. Persyaratan Sistem
+
+Pastikan sistem Anda memenuhi persyaratan berikut:
+
+- **Node.js**: `v18.17` atau yang lebih baru
+- **Package Manager**: `npm` (biasanya sudah terinstal bersama Node.js) atau `yarn`
+- **Backend API**: Backend API harus sudah berjalan sebelum menjalankan proyek ini.
+
+### b. Langkah-langkah Instalasi dan Menjalankan
+
+Proyek ini memerlukan API backend untuk dapat berfungsi.
+
+#### 1. Jalankan Backend API
+
+- Unduh dan jalankan proyek backend yang tersedia di tautan Google Drive berikut:
+  [Backend API GDrive](https://drive.google.com/file/d/1mJAS-AFxj3NU9jvPD9Ue9Z56ssX4Mcrs/view)
+- Pastikan API backend sudah berjalan _sebelum_ melanjutkan ke langkah berikutnya. (Untuk informasi lebih detail tentang API endpoints dan cara setup, silakan baca `README.MD` di repository backend)
+
+#### 2. Instalasi Dependensi Frontend
+
+- Clone Repositori
+
+```sh
+git clone https://github.com/maoelanaAs/technical-test-fe-sgt.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Masuk ke Direktori Proyek
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```sh
+cd technical-test-fe-sgt
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Instal Dependensi
 
-## Learn More
+```sh
+npm install
+```
 
-To learn more about Next.js, take a look at the following resources:
+atau
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```sh
+yarn install
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### c. Perintah untuk Menjalankan Proyek
 
-## Deploy on Vercel
+Setelah semua dependensi terinstal, jalankan perintah berikut untuk memulai server development:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```sh
+npm run dev
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+atau
+
+```sh
+yarn dev
+```
+
+Server akan berjalan di mode development. Buka [http://localhost:3000](http://localhost:3000/) di browser untuk melihat hasilnya.
