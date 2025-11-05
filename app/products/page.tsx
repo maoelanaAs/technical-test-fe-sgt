@@ -263,6 +263,7 @@ export default function Products() {
               loading={loading}
               pagination={false}
               size="middle"
+              scroll={{ x: "100vh" }}
             />
             <Pagination
               style={{ marginTop: 24 }}
